@@ -1,0 +1,10 @@
+binari = input("Introduïr nombre binari:") 
+
+def convertirOctal( binari ):
+    decimal = 0
+    for digit in binari:
+        decimal = decimal * 2 + int(digit)
+    
+    return oct( decimal )
+
+print( convertirOctal( binari ) )
