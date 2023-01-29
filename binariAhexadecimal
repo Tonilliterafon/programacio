@@ -1,0 +1,11 @@
+
+binari = input("Introduïr nombre binari:") 
+
+def convertirHex( binari ):
+    decimal = 0
+    for digit in binari:
+        decimal = decimal * 2 + int(digit)
+    
+    return hex( decimal )
+
+print( convertirHex( binari ) )
