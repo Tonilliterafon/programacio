@@ -1,0 +1,9 @@
+binari = input("Introduïr nombre binari:") 
+
+def convertir( binari ):
+    decimal = 0
+    for digit in binari:
+        decimal = decimal * 2 + int(digit)
+    return decimal
+
+print( convertir( binari ) )
